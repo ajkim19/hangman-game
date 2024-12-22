@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hangman</title>
+    <style src="styles.css"></style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="column-full flex the-game">
+        <div class="column-full flex section-1">
+          <!-- Game info -->
+          <div class="column-full flex game-info">
+            <h1>Hangman</h1>
+            <p>
+              Solve the mystery word and save the poor soul from the gallows!
+            </p>
+          </div>
+        </div>
+        <div class="column-full flex game-body">
+          <div class="column-third flex game-prompt">
+            <!-- Game prompt -->
+            <!-- Limit input to alphabet chars -->
+            <div class="flex form">
+              <label class="letter-prompt" for="guess-field">
+                Enter a letter:
+              </label>
+              <input
+                type="text"
+                id="guess-field"
+                class="guess-field"
+                maxlength="1" />
+              <input type="submit" value="Submit Guess" class="guess-submit" />
+            </div>
+            <!-- Discard Pile -->
+            <div class="flex discard-pile">
+              <p>Discard pile:&nbsp;&nbsp;&nbsp;</p>
+              <div class="flex discard-letter"></div>
+            </div>
+            <!-- Number of attempts -->
+            <div class="flex attempts">
+              <p>Number of attempts:&nbsp;&nbsp;</p>
+              <h3 class="number-of-attempts">0/7</h3>
+            </div>
+          </div>
+          <div class="column-third flex illustration section-3">
+            <div class="flex illustration-hangman">
+              <h3>_____</h3>
+              <h3>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+              <div class="flex">
+                <h3 id="head" class="body-part-4">_</h3>
+                <h3 id="head" class="body-part-1">O</h3>
+                <h3 id="head" class="body-part-2">_</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+              </div>
+              <div class="flex">
+                <h3 class="body-part-4">\</h3>
+                <h3 class="body-part-3">|</h3>
+                <h3 class="body-part-2">/</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+              </div>
+              <div class="flex">
+                <h3 class="body-part-5">|</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+              </div>
+              <div class="flex">
+                <h3 class="body-part-7">_/&nbsp;</h3>
+                <h3 class="body-part-6">\_</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+              </div>
+              <div class="flex">
+                <h3>|</h3>
+              </div>
+              <div class="flex">
+                <p class="last-words">It's OK. I'm a dummy,&nbsp;&nbsp;</p>
+                <h3>|</h3>
+              </div>
+              <div class="flex">
+                <p class="last-words">not a person ;&#41;&nbsp;&nbsp;</p>
+                <h3>|</h3>
+              </div>
+              <div class="flex">
+                <h3 class="gallows-base">_______________</h3>
+                <h3>|</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mystery-word section-4">
+          <div class="flex mystery-word-reveal-canvas">
+            <div class="flex mystery-word-reveal"></div>
+          </div>
+          <div class="flex mystery-word-blank-canvas">
+            <div class="flex mystery-word-blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#hidden {
+  display: none;
+}
+
+.container {
+  font-family: sans-serif;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.column-full {
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+.column-third {
+  flex-basis: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Game info */
+.section-1 {
+  margin-top: 25px;
+}
+
+.game-info {
+  justify-content: center;
+  margin: 0 auto;
+  flex-basis: 500px;
+}
+
+/* Game prompt */
+.game-body {
+  margin: 10px 0;
+}
+
+.game-prompt {
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.form {
+  align-items: end;
+  height: 60px;
+  padding-bottom: 15px;
+  margin: 5px 0;
+}
+
+.form > * {
+  margin: 10px 0;
+}
+
+.letter-prompt {
+  font-size: 26px;
+}
+
+#guess-field {
+  position: relative;
+  bottom: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: center;
+  width: 50px;
+  height: 40px;
+  padding-bottom: 0;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#guess-field:focus {
+  outline: 0;
+}
+
+.guess-submit {
+  height: 35px;
+  width: 136px;
+  font-size: 18px;
+}
+
+/* Discarded letters */
+.discard-pile,
+.attempts {
+  flex-direction: column;
+  height: 55px;
+  width: 390px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.discard-letter > h3 {
+  margin-right: 12px;
+}
+
+/*
+.discard-letter {
+  align-items: end;
+} */
+
+/* Hangman illustration */
+.illustration {
+  justify-content: center;
+}
+
+.illustration-hangman {
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 25px;
+  justify-content: center;
+  align-items: end;
+}
+
+.illustration-hangman > *,
+.illustration-hangman > div > p {
+  height: 22px;
+}
+
+p#head {
+  letter-spacing: -2.7px;
+}
+
+.body-part-1,
+.body-part-2,
+.body-part-3,
+.body-part-4,
+.body-part-5,
+.body-part-6,
+.body-part-7 {
+  opacity: 0;
+}
+
+.gallows-base {
+  width: 180px;
+}
+
+.last-words {
+  display: none;
+  font-size: 16px;
+}
+
+/* Mystery Word */
+.mystery-word {
+  position: relative;
+  width: 100%;
+  height: 85px;
+  margin: 15px 0;
+}
+
+.mystery-word-reveal-canvas,
+.mystery-word-blank-canvas {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mystery-word-reveal,
+.mystery-word-blank {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.mystery-word-reveal {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.mystery-letter-reveal,
+.mystery-letter-blank {
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  margin: 0;
+}
+
+.mystery-letter-reveal {
+  opacity: 0;
+}
+
+.mystery-letter-blank {
+  background-color: white;
+  text-decoration-line: underline;
+}
