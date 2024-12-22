@@ -23,7 +23,7 @@ Yeah. That's it. Though I might use TypeScript later.
 - Type a single letter into the prompt.
 - Click the button to submit your guess.
 -  You're allowed 7 incorrect guesses before it's Game Over (Objective Unachieved, whomp whomp, etc.).
-- Regardless of the outcome, you will be prompted to decide to either play again, or rage quit.
+- Regardless of the outcome, you will be prompted to either play again, or rage quit.
 
 ### Notable Features (only I might find them significant)
 - The hangman is a stick figure using characters from the English QWERTY keyboard. Okay. So, about 75% of the way through, as I started thinking about how I should try to modify my program in the near future. I then thought about how I might spruce up the animation and add images. I realized, no... So, this hangman game might turn into a complete-the-picture-of-this-cute-puppy-that's-not-hanging-by-a-noose-by-solving-the-word game.
