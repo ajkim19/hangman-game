@@ -26,9 +26,22 @@ Yeah. That's it. Though I might use TypeScript later.
 - Regardless of the outcome, you will be prompted to decide to either play again, or rage quit.
 
 ### Notable Features (only I might find them significant)
-- The hangman is a stick figure using characters from the English QWERTY keyboard. Okay. So, about 75% of the way through, as I started thinking about how I should try to modify my program in the near future. I then thought about how I might spruce up the animation and add images. I realized, no... So, this hangman game might turn into a complete-the-picture-of-this-cute-puppy-that's-not-hanging-by-a-noose-by-solving-the-word game. Moving on.
+- The hangman is a stick figure using characters from the English QWERTY keyboard. Okay. So, about 75% of the way through, as I started thinking about how I should try to modify my program in the near future. I then thought about how I might spruce up the animation and add images. I realized, no... So, this hangman game might turn into a complete-the-picture-of-this-cute-puppy-that's-not-hanging-by-a-noose-by-solving-the-word game.
+
+<p align="left">
+  <img src="hangman-stick.png" alt="hangman figure">
+</p>
+
+Yeah, even that might be controversial. Oh well. Moving on.
+
 - After submitting the first letter, the prompt will reset, immediately prepared for the next letter submission. This felt key to me because it annoyed me like no other when I had to keep moving the cursor back to the input box after every button click. I don't know. Maybe it's just me. I'll get over it. Stop looking at me.
 
-## Resources
+<p align="left">
+  <img src="hangman-prompt.png" alt="hangman prompt">
+</p>
+
+That cursor line like felt like my messiah when I implemented it.
+
+## References
 - [**MDN Web Docs**](https://developer.mozilla.org/en-US/)
 - [**W3Schools**](https://www.w3schools.com/)
