@@ -1,6 +1,6 @@
 # Hangman
 
-A simple game of hangman from a simple little man
+A simple game from a simple man
 
 ## Background
 
