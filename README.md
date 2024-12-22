@@ -8,10 +8,9 @@ I'm currently taking a web development bootcamp and about two months in. I got b
 For this project, in it's initial stages, I've utilized:
 - HTML5
 - CSS
-- JavaScript
-  - DOM
+- jQuery
 
-Like with most web applications, HTML was used as for the underlying structure, CSS added some flare (if you can consider it so), and JavaScript manipulation of the DOM handled the user interactions and "animation."
+Like with most web applications, HTML was used as for the underlying structure, CSS added some flare (if you can consider it so), and jquery handled the user interactions and "animation."
 
 ## How to Install (For Beginners Like Me)
 1. Clone the repository
