@@ -44,12 +44,12 @@ Yeah, even that might be controversial. Oh well. Moving on.
 
 ### Returned Focus
 
-After submitting the first letter, the prompt will reset, immediately prepared for the next letter submission. This was key to me because it annoyed me like no other when I had to keep moving the cursor back to the input box after every button click. So, this:
-"**move**-**click**-type-**move**-**click**-**move**-**click**-type-**move**-**click**-**move**-**click**-type-**move**-**click**" 
+At the start of the game, the cursor in input field is active and waiting for the first letter. In addition, every time after entering a letter, the prompt will reset, immediately prepared for the next letter submission. This was key to me because it annoyed me like no other when I had to keep moving the cursor back to the input box after every button click. So, this:
+"**move**-**click**-type-**move**-**click**-**move**-**click**-type-**move**-**click**" 
 
 became this:
 
-"**move**-**click**-type-**move**-**click**-type-**click**-type-**click**."
+"type-**click**-type-**click**."
 
 <p align="left">
   <img src="hangman-prompt.png" alt="hangman prompt">
