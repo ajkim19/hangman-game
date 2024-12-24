@@ -8,7 +8,7 @@
   <body>
     <div class="container flex">
       <div class="column-full flex the-game">
-        <div class="column-full flex section-1">
+        <div class="column-full flex game-head">
           <!-- Game info -->
           <div class="column-full flex game-info">
             <h1>Hangman</h1>
@@ -39,50 +39,55 @@
               <h3 class="number-of-attempts">0/7</h3>
             </div>
           </div>
-          <div class="column-third flex illustration section-3">
-            <div class="flex illustration-hangman">
-              <h3>_____</h3>
-              <h3>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-              <div class="flex">
-                <h3 id="head" class="body-part-4">_</h3>
-                <h3 id="head" class="body-part-1">O</h3>
-                <h3 id="head" class="body-part-2">_</h3>
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-              </div>
-              <div class="flex">
-                <h3 class="body-part-4">\</h3>
-                <h3 class="body-part-3">|</h3>
-                <h3 class="body-part-2">/</h3>
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-              </div>
-              <div class="flex">
-                <h3 class="body-part-5">|</h3>
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-              </div>
-              <div class="flex">
-                <h3 class="body-part-7">_/&nbsp;</h3>
-                <h3 class="body-part-6">\_</h3>
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-              </div>
-              <div class="flex">
-                <h3>|</h3>
-              </div>
-              <div class="flex">
-                <p class="last-words">It's OK. I'm a dummy,&nbsp;&nbsp;</p>
-                <h3>|</h3>
-              </div>
-              <div class="flex">
-                <p class="last-words">not a person ;&#41;&nbsp;&nbsp;</p>
-                <h3>|</h3>
-              </div>
-              <div class="flex">
-                <h3 class="gallows-base">_______________</h3>
-                <h3>|</h3>
+          <div class="column-quarter flex illustration">
+            <div class="hangman-image">
+              <div class="hangman-blank">
+                <div class="flex gallows">
+                  <h3>_______</h3>
+                  <h3>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                  <div class="flex">
+                    <h3 id="head" class="body-part-4">_</h3>
+                    <h3 id="head" class="body-part-1">O</h3>
+                    <h3 id="head" class="body-part-2">_</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                  </div>
+                  <div class="flex">
+                    <h3 class="body-part-4">\</h3>
+                    <h3 class="body-part-3">|</h3>
+                    <h3 class="body-part-2">/</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                  </div>
+                  <div class="flex">
+                    <h3 class="body-part-5">|</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                  </div>
+                  <div class="flex">
+                    <h3 class="body-part-7">_/&nbsp;</h3>
+                    <h3 class="body-part-6">\_</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                  </div>
+                  <div class="flex">
+                    <h3>|</h3>
+                  </div>
+                  <div class="flex">
+                    <h3>|</h3>
+                  </div>
+                  <div class="flex">
+                    <p class="last-words">&nbsp;&nbsp;</p>
+                    <h3>|</h3>
+                  </div>
+                  <div class="flex">
+                    <h3 class="gallows-base">_________________</h3>
+                    <h3>|</h3>
+                    
+                  </div>
+                  <p class="last-words">It's OK. I'm a dummy,not a person ;&#41;</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="mystery-word section-4">
+        <div class="mystery-word">
           <div class="flex mystery-word-reveal-canvas">
             <div class="flex mystery-word-reveal"></div>
           </div>

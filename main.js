@@ -31,8 +31,8 @@ let mysteryWordBlank = document.querySelector('.mystery-word-blank');
 if (!mysteryWordBlank) throw new Error('mysteryWordBlank does not exist');
 let mysteryWordReveal = document.querySelector('.mystery-word-reveal');
 if (!mysteryWordReveal) throw new Error('mysteryWordReveal does not exist');
-const illustrationHangman = document.querySelector('.illustration-hangman');
-if (!illustrationHangman) throw new Error('illustrationHangman does not exist');
+const gallows = document.querySelector('.gallows');
+if (!gallows) throw new Error('gallows does not exist');
 const lastWords = document.querySelectorAll('.last-words');
 if (!lastWords) throw new Error('lastWords does not exist');
 let attemptCount = 0;
@@ -112,7 +112,7 @@ async function checkGuess() {
     numAttempts.textContent = `${attemptCount}/7`;
 
     const bodyPart = Array.prototype.slice.call(
-      illustrationHangman.querySelectorAll(`.body-part-${attemptCount}`)
+      gallows.querySelectorAll(`.body-part-${attemptCount}`)
     );
     bodyPart.forEach((e) => {
       e.style.opacity = 100;
