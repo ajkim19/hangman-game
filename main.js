@@ -1,44 +1,44 @@
 const wordList = [
-  'JAVASCRIPT',
-  'PROPERTY',
-  'TENNIS',
-  'HISTORIAN',
-  'PHOTO',
-  'DECISION',
-  'EXTENT',
-  'EXAMINATION',
-  'SUPERMARKET',
-  'ANIME',
-  'BRUIN',
-  'RESPONSE',
-  'GOVERNMENT',
-  'MEMORY',
-  'VIDEO',
-  'ENVIRONMENT',
-  'COLUMN',
-  'BREAD',
-  'MOVIE',
-  'ESTABLISHMENT',
+  "JAVASCRIPT",
+  "PROPERTY",
+  "TENNIS",
+  "HISTORIAN",
+  "PHOTO",
+  "DECISION",
+  "EXTENT",
+  "EXAMINATION",
+  "SUPERMARKET",
+  "ANIME",
+  "BRUIN",
+  "RESPONSE",
+  "GOVERNMENT",
+  "MEMORY",
+  "VIDEO",
+  "ENVIRONMENT",
+  "COLUMN",
+  "BREAD",
+  "MOVIE",
+  "ESTABLISHMENT",
 ];
 
-const guessField = document.querySelector('.guess-field');
-if (!guessField) throw new Error('guessField does not exist');
-const guessSubmit = document.querySelector('.guess-submit');
-if (!guessSubmit) throw new Error('guessSubmit does not exist');
-let numAttempts = document.querySelector('.number-of-attempts');
-if (!numAttempts) throw new Error('numAttempts does not exist');
-let mysteryWordBlank = document.querySelector('.mystery-word-blank');
-if (!mysteryWordBlank) throw new Error('mysteryWordBlank does not exist');
-let mysteryWordReveal = document.querySelector('.mystery-word-reveal');
-if (!mysteryWordReveal) throw new Error('mysteryWordReveal does not exist');
-const illustrationHangman = document.querySelector('.illustration-hangman');
-if (!illustrationHangman) throw new Error('illustrationHangman does not exist');
-const lastWords = document.querySelectorAll('.last-words');
-if (!lastWords) throw new Error('lastWords does not exist');
+const guessField = document.querySelector(".guess-field");
+if (!guessField) throw new Error("guessField does not exist");
+const guessSubmit = document.querySelector(".guess-submit");
+if (!guessSubmit) throw new Error("guessSubmit does not exist");
+let numAttempts = document.querySelector(".number-of-attempts");
+if (!numAttempts) throw new Error("numAttempts does not exist");
+let mysteryWordBlank = document.querySelector(".mystery-word-blank");
+if (!mysteryWordBlank) throw new Error("mysteryWordBlank does not exist");
+let mysteryWordReveal = document.querySelector(".mystery-word-reveal");
+if (!mysteryWordReveal) throw new Error("mysteryWordReveal does not exist");
+const gallows = document.querySelector(".gallows");
+if (!gallows) throw new Error("gallows does not exist");
+const lastWords = document.querySelectorAll(".last-words");
+if (!lastWords) throw new Error("lastWords does not exist");
 let attemptCount = 0;
 let letterCount = 0;
 let lettersUsed = [];
-let mysteryWord = '';
+let mysteryWord = "";
 
 function isALetter(data) {
   return /^[a-zA-Z]+$/.test(data);
@@ -49,7 +49,7 @@ function sleep(ms) {
 }
 
 function turnReset() {
-  guessField.value = '';
+  guessField.value = "";
   guessField.select();
 }
 
@@ -70,7 +70,7 @@ function prepGame() {
 }
 
 prepGame();
-console.log("It's " + mysteryWord + '... cheater...');
+console.log("It's " + mysteryWord + "... cheater...");
 
 // Start game
 async function checkGuess() {
@@ -79,14 +79,14 @@ async function checkGuess() {
 
   // Check if the letter is a letter in the alphabet
   if (isALetter(userGuess) === false) {
-    alert('Attempts are limited to letters from A-Z. Please try again.');
+    alert("Attempts are limited to letters from A-Z. Please try again.");
     turnReset();
     return;
   }
 
   for (const letter of lettersUsed) {
     if (userGuess === letter) {
-      alert('You have already entered this let. Please try again');
+      alert("You have already entered this let. Please try again");
       turnReset();
       return;
     }
@@ -111,15 +111,17 @@ async function checkGuess() {
     attemptCount++;
     numAttempts.textContent = `${attemptCount}/7`;
 
-    const bodyPart = Array.prototype.slice.call(
-      illustrationHangman.querySelectorAll(`.body-part-${attemptCount}`)
-    );
-    bodyPart.forEach((e) => {
-      e.style.opacity = 100;
-    });
+    // const bodyPart = Array.prototype.slice.call(
+    //   bodyPart = document.querySelectorAll(`#body-part-${attemptCount}`)
+    // );
+    // bodyPart.forEach((e) => {
+    //   e.style.opacity = 0;
+    // });
+
+    document.getElementById(`body-part-${attemptCount}`).style.opacity = 0;
 
     document.querySelector(
-      '.discard-letter'
+      ".discard-letter"
     ).innerHTML += `<h3>${userGuess}</h3>`;
 
     if (attemptCount === 7) {
@@ -142,7 +144,7 @@ async function checkGuess() {
   // Checks to see if the words has been solved
   if (letterCount === mysteryWord.length) {
     await sleep(25);
-    if (confirm('Congratulations, you solved it! Want to play again?')) {
+    if (confirm("Congratulations, you solved it! Want to play again?")) {
       // Restart the program
       prepGame();
       history.go(0);
@@ -153,4 +155,4 @@ async function checkGuess() {
   turnReset();
 }
 
-guessSubmit.addEventListener('click', checkGuess);
+guessSubmit.addEventListener("click", checkGuess);

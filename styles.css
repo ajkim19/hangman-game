@@ -41,8 +41,8 @@ body {
   flex-basis: 100%;
 }
 
-.column-third {
-  flex-basis: auto;
+.column-quarter {
+  flex-basis: 25%;
 }
 
 .flex {
@@ -51,7 +51,7 @@ body {
 }
 
 /* Game info */
-.section-1 {
+.game-head {
   margin-top: 25px;
 }
 
@@ -71,7 +71,7 @@ body {
   flex-direction: column;
   justify-content: start;
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .form {
@@ -136,26 +136,102 @@ body {
   margin-right: 12px;
 }
 
-/*
-.discard-letter {
-  align-items: end;
-} */
-
 /* Hangman illustration */
 .illustration {
   justify-content: center;
 }
 
-.illustration-hangman {
+.hangman-image {
+  width: 100%;
+  position: relative;
+  background-image: url("images/hangman-full-image.png");
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position-x: 74px;
+  background-position-y: 50px;
+}
+
+#body-part-1 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 50px;
+  bottom: 162px;
+  left: 70px;
+  right: 60px;
+}
+
+#body-part-2 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 73px;
+  bottom: 135px;
+  left: 91px;
+  right: 79px;
+}
+
+#body-part-3 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 73px;
+  bottom: 110px;
+  left: 70px;
+  right: 108px;
+}
+
+#body-part-4 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 73px;
+  bottom: 110px;
+  left: 121px;
+  right: 60px;
+}
+
+#body-part-5 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 100px;
+  bottom: 110px;
+  left: 91px;
+  right: 79px;
+}
+
+#body-part-6 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 124px;
+  bottom: 54px;
+  left: 91px;
+  right: 93px;
+}
+
+#body-part-7 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 124px;
+  bottom: 54px;
+  left: 105px;
+  right: 78px;
+}
+
+.gallows {
   flex-direction: column;
   box-sizing: border-box;
   font-size: 25px;
   justify-content: center;
   align-items: end;
+  margin-left: 0;
 }
 
-.illustration-hangman > *,
-.illustration-hangman > div > p {
+.gallows > *,
+.gallows > div > p {
   height: 22px;
 }
 
@@ -178,8 +254,12 @@ p#head {
 }
 
 .last-words {
-  display: none;
+  position: absolute;
+  display: block;
+  width: 260px;
   font-size: 16px;
+  bottom: -25px;
+  right: -65px;
 }
 
 /* Mystery Word */
