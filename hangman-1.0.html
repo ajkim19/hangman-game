@@ -25,7 +25,13 @@
               <label class="letter-prompt" for="guess-field">
                 Enter a letter:
               </label>
-              <input type="text" id="guess-field" class="guess-field" maxlength="1" autofocus />
+              <input
+                type="text"
+                id="guess-field"
+                class="guess-field"
+                maxlength="1"
+                autofocus
+              />
               <input type="submit" value="Submit Guess" class="guess-submit" />
             </div>
             <!-- Discard Pile -->
@@ -41,48 +47,56 @@
           </div>
           <div class="column-quarter flex illustration">
             <div class="hangman-image">
-              <div class="hangman-blank">
-                <div class="flex gallows">
-                  <h3>_______</h3>
-                  <h3>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-                  <div class="flex">
-                    <h3 id="head" class="body-part-4">_</h3>
-                    <h3 id="head" class="body-part-1">O</h3>
-                    <h3 id="head" class="body-part-2">_</h3>
-                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-                  </div>
-                  <div class="flex">
-                    <h3 class="body-part-4">\</h3>
-                    <h3 class="body-part-3">|</h3>
-                    <h3 class="body-part-2">/</h3>
-                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-                  </div>
-                  <div class="flex">
-                    <h3 class="body-part-5">|</h3>
-                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-                  </div>
-                  <div class="flex">
-                    <h3 class="body-part-7">_/&nbsp;</h3>
-                    <h3 class="body-part-6">\_</h3>
-                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
-                  </div>
-                  <div class="flex">
-                    <h3>|</h3>
-                  </div>
-                  <div class="flex">
-                    <h3>|</h3>
-                  </div>
-                  <div class="flex">
-                    <p class="last-words">&nbsp;&nbsp;</p>
-                    <h3>|</h3>
-                  </div>
-                  <div class="flex">
-                    <h3 class="gallows-base">_________________</h3>
-                    <h3>|</h3>
-                    
-                  </div>
-                  <p class="last-words">It's OK. I'm a dummy,not a person ;&#41;</p>
+              <div id="body-part-1" class="body-part-1"></div>
+              <div id="body-part-2" class="body-part-2"></div>
+              <div id="body-part-3" class="body-part-3"></div>
+              <div id="body-part-4" class="body-part-4"></div>
+              <div id="body-part-5" class="body-part-5"></div>
+              <div id="body-part-6" class="body-part-6"></div>
+              <div id="body-part-7" class="body-part-7"></div>
+              <div class="flex gallows">
+                <h3>_______</h3>
+                <h3>
+                  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                </h3>
+                <div class="flex">
+                  <!-- <h3 id="head" class="body-part-4">_</h3>
+                  <h3 id="head" class="body-part-1">O</h3>
+                  <h3 id="head" class="body-part-2">_</h3> -->
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
                 </div>
+                <div class="flex">
+                  <!-- <h3 class="body-part-4">\</h3>
+                  <h3 class="body-part-3">|</h3>
+                  <h3 class="body-part-2">/</h3> -->
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <!-- <h3 class="body-part-5">|</h3> -->
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <!-- <h3 class="body-part-7">_/&nbsp;</h3>
+                  <h3 class="body-part-6">\_</h3> -->
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <h3>|</h3>
+                </div>
+                <div class="flex">
+                  <h3>|</h3>
+                </div>
+                <div class="flex">
+                  <p class="last-words">&nbsp;&nbsp;</p>
+                  <h3>|</h3>
+                </div>
+                <div class="flex">
+                  <h3 class="gallows-base">_________________</h3>
+                  <h3>|</h3>
+                </div>
+                <p class="last-words">
+                  It's OK. I'm a dummy,not a person ;&#41;
+                </p>
               </div>
             </div>
           </div>

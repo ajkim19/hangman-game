@@ -144,16 +144,81 @@ body {
 .hangman-image {
   width: 100%;
   position: relative;
-  background-image: url('images/hangman-full-image.png');
+  background-image: url("images/hangman-full-image.png");
   background-size: 65px;
   background-repeat: no-repeat;
-  background-position-x: 60px;
+  background-position-x: 74px;
   background-position-y: 50px;
 }
 
-.hangman-blank {
+#body-part-1 {
+  background-color: white;
   position: absolute;
-  
+  opacity: 100;
+  top: 50px;
+  bottom: 162px;
+  left: 70px;
+  right: 60px;
+}
+
+#body-part-2 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 73px;
+  bottom: 135px;
+  left: 91px;
+  right: 79px;
+}
+
+#body-part-3 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 73px;
+  bottom: 110px;
+  left: 70px;
+  right: 108px;
+}
+
+#body-part-4 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 73px;
+  bottom: 110px;
+  left: 121px;
+  right: 60px;
+}
+
+#body-part-5 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 100px;
+  bottom: 110px;
+  left: 91px;
+  right: 79px;
+}
+
+#body-part-6 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 124px;
+  bottom: 54px;
+  left: 91px;
+  right: 93px;
+}
+
+#body-part-7 {
+  background-color: white;
+  position: absolute;
+  opacity: 100;
+  top: 124px;
+  bottom: 54px;
+  left: 105px;
+  right: 78px;
 }
 
 .gallows {
@@ -193,7 +258,7 @@ p#head {
   display: block;
   width: 260px;
   font-size: 16px;
-  bottom: -35px;
+  bottom: -25px;
   right: -65px;
 }
 
