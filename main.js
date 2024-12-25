@@ -111,13 +111,6 @@ async function checkGuess() {
     attemptCount++;
     numAttempts.textContent = `${attemptCount}/7`;
 
-    // const bodyPart = Array.prototype.slice.call(
-    //   bodyPart = document.querySelectorAll(`#body-part-${attemptCount}`)
-    // );
-    // bodyPart.forEach((e) => {
-    //   e.style.opacity = 0;
-    // });
-
     document.getElementById(`body-part-${attemptCount}`).style.opacity = 0;
 
     document.querySelector(
@@ -136,7 +129,6 @@ async function checkGuess() {
         prepGame();
         history.go(0);
         return;
-      } else {
       }
     }
   }
