@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hangman</title>
+    <style src="styles.css"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="column-full flex the-game">
+        <div class="column-full flex game-head">
+          <!-- Game info -->
+          <div class="column-full flex game-info">
+            <h1>Hangman</h1>
+            <p>
+              Solve the mystery word and save the poor soul from the gallows!
+            </p>
+          </div>
+        </div>
+        <div class="column-full flex game-body">
+          <div class="column-third flex game-prompt">
+            <!-- Game prompt -->
+            <!-- Limit input to alphabet chars -->
+            <div class="flex form">
+              <label class="letter-prompt" for="guess-field">
+                Enter a letter:
+              </label>
+              <input
+                type="text"
+                id="guess-field"
+                class="guess-field"
+                maxlength="1"
+                autofocus
+              />
+              <input type="submit" value="Submit Guess" class="guess-submit" />
+            </div>
+            <!-- Discard Pile -->
+            <div class="flex discard-pile">
+              <p>Discard pile:&nbsp;&nbsp;&nbsp;</p>
+              <div class="flex discard-letter"></div>
+            </div>
+            <!-- Number of attempts -->
+            <div class="flex attempts">
+              <p>Number of attempts:&nbsp;&nbsp;</p>
+              <h3 class="number-of-attempts">0/7</h3>
+            </div>
+          </div>
+          <div class="column-quarter flex illustration">
+            <div class="hangman-image">
+              <div id="body-part-1" class="body-part-1"></div>
+              <div id="body-part-2" class="body-part-2"></div>
+              <div id="body-part-3" class="body-part-3"></div>
+              <div id="body-part-4" class="body-part-4"></div>
+              <div id="body-part-5" class="body-part-5"></div>
+              <div id="body-part-6" class="body-part-6"></div>
+              <div id="body-part-7" class="body-part-7"></div>
+              <div class="flex gallows">
+                <h3 class="gallows-top">________</h3>
+                <h3>
+                  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                </h3>
+                <div class="flex">
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h3>
+                </div>
+                <div class="flex">
+                  <h3>|</h3>
+                </div>
+                <div class="flex">
+                  <h3>|</h3>
+                </div>
+                <div class="flex">
+                  <p class="last-words">&nbsp;&nbsp;</p>
+                  <h3>|</h3>
+                </div>
+                <div class="flex">
+                  <h3 class="gallows-base">____________________</h3>
+                  <h3>|</h3>
+                </div>
+                <p class="last-words">
+                  It's OK. I'm a dummy, not a person ;&#41;
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mystery-word">
+          <div class="flex mystery-word-reveal-canvas">
+            <div class="flex mystery-word-reveal"></div>
+          </div>
+          <div class="flex mystery-word-blank-canvas">
+            <div class="flex mystery-word-blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
