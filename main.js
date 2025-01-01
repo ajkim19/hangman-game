@@ -148,3 +148,10 @@ async function checkGuess() {
 }
 
 guessSubmit.addEventListener("click", checkGuess);
+guessField.addEventListener("keydown", function (e) {
+  if (e.code === 'Enter') {
+    checkGuess();
+    e.preventDefault();
+    guessSubmit.submit()
+  }
+});
