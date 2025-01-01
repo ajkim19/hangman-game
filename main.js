@@ -98,7 +98,7 @@ async function checkGuess() {
   let letterExists = false;
   for (let i = 0; i < mysteryWord.length; i++) {
     if (userGuess === mysteryWord[i]) {
-      document.querySelector(`#mystery-letter-${i + 1}`).style.opacity = 100;
+      document.querySelector(`#mystery-letter-${i + 1}`).style.opacity = 1;
       letterExists = true;
       turnReset();
       letterCount++;
