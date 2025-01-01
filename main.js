@@ -121,7 +121,7 @@ async function checkGuess() {
       guessSubmit.disabled = true;
 
       for (let i = 0; i < lastWords.length; i++) {
-        lastWords[i].style.opacity = 100;
+        lastWords[i].style.opacity = 1;
       }
       await sleep(25);
       if (confirm("I'm sorry. You lost. :( Want to try again?")) {

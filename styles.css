@@ -260,6 +260,7 @@ p#head {
   font-size: 16px;
   bottom: -25px;
   right: -65px;
+  opacity: 0;
 }
 
 /* Mystery Word */
