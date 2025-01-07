@@ -1,10 +1,13 @@
-# Hangman
+<p align="left">
+  <img src="images/hangman-title.png" alt="hangman figure">
+</p>
 
-A simple game from a simple man
+
+A simple game from a simple man-child
 
 ## Background
 
-I'm currently taking a web development bootcamp and about two months in. I got bored and decided to build a hangman game for practice and to pass the time. So far, we've gone over some beginner-level HTML, CSS, Javascript, TypeScript, and jQuery. I plan to add more features and complexity the more I learn. I might just overkill on the complexity for the purpose of increasing my proficiency.
+I'm currently taking a web development bootcamp and about two months in. I got bored and decided to build a hangman game for practice and to pass the time. So far, we've gone over some beginner-level HTML, CSS, vanilla Javascript, TypeScript, and jQuery. I plan to add more features and complexity the more I learn. I might just overkill on the complexity for the purpose of increasing my proficiency.
 
 ## Under the Hood
 
@@ -55,7 +58,7 @@ Moving on :dog:
 
 ### Returned Focus
 
-At the start of the game, the cursor (and/or caret?) in input field is active and waiting for the first letter. In addition, every time after entering a letter, the prompt will reset, immediately prepared for the next letter submission. This was key to me because it annoyed me like no other when I had to keep moving the cursor back to the input box after every button click. So, this:
+At the start of the game, the cursor (and/or caret?) in input field is active and waiting for the first letter. In addition, every time after entering a letter, the prompt will reset, immediately prepared for the next letter submission. This became essential to me because it annoyed me like no other when I had to keep moving the cursor back to the input box after every button click. So, this:
 "**move**-**click**-type-**move**-**click**-**move**-**click**-type-**move**-**click**" 
 
 became this:
